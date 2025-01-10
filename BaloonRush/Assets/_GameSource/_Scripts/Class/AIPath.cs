@@ -55,8 +55,15 @@ public class AIPath : MonoBehaviour
 
     public void LoadPath()
     {
+        Debug.Log("Searching for path: " + gameObject.name + "_Path");       
         path = GameObject.Find(gameObject.name + "_Path").transform;
+        if (path == null)
+        {
+            Debug.LogError("Path not found for: " + gameObject.name);
+        }
+        Debug.Log($"AI Name: {gameObject.name}, Path: {path}");
         pathPoints = path.GetComponentsInChildren<Transform>().ToList();
+        Debug.Log($"Child count of {path.name}: {path.transform.childCount}");
         pathPoints.RemoveAt(0);
         currentIndex = -1;
         NextPoint();
