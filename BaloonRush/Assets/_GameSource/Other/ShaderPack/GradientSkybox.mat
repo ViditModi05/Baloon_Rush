@@ -29,6 +29,6 @@ Material:
     - _GroundPos: -0.357
     - _SkyPos: 0.5
     m_Colors:
-    - _Color: {r: 0.41509432, g: 0.27856168, b: 0.09985758, a: 1}
+    - _Color: {r: 0.81806964, g: 0.023139905, b: 0.9811321, a: 1}
     - _Color2: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
